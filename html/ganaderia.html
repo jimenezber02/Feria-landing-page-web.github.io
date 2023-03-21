@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css?v=87152">
+	<link rel="stylesheet" type="text/css" href="../css/ganaderia.css?v=61524">
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<title>Actividad - Ganader&iacute;a</title>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var p_footer = document.querySelector('footer .footer-copyright .contain');
+			
+			var elems = document.querySelectorAll('.sidenav');
+    	M.Sidenav.init(elems);
+
+			var _date = new Date();
+
+			//Para el copyright en el pie de pagina
+			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<nav class="">
+		  <div class="nav-wrapper">
+      	<a href="../index.html" class="brand-logo">Oc&uacute;</a>
+	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+        	<li><a href="../index.html">Inicio</a></li>
+        	<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+        	<li><a href="historia.html">Historia</a></li>
+        	<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+		    </ul>
+			</div>
+  		</nav>
+	  	<ul class="sidenav" id="mobile-demo">
+	    	<li><a href="#feria-san-sebastian">Inicio</a></li>
+      		<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+      		<li><a href="historia.html">Historia</a></li>
+      		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+  		</ul>
+  		<!-- End Region menu -->
+
+  		<!-- Región header -->
+  		<header>
+  			<article class="margen-interno">
+  				<h2>Actividades de ganader&iacute;a</h2>
+  			</article>
+  		</header>
+  		<!-- End Region header -->
+
+  		<div class="wrapper margen-interno" id="wrapper-one">
+  			<article id="article-one">
+  				<h5>Los mejores productos</h5>
+  				<h2>Exposici&oacute;n de ejemplares</h2>
+  				<p>
+  					La regi&oacute;n central, especialmente en nuestra &aacute;rea de Oc&uacute; se 
+  					caracteriza por tener los mejores ejemplares de ganados que satisfacen en gran medida
+  					las exigencias del mercado nacional e internacional.
+  				</p>
+  			</article>
+  			<article id="article-two">
+  				<div class="card-wrapper">
+  					<div class="head">
+  						<span class="material-icons">
+								verified_user
+							</span>
+  					</div>
+  					<div class="body">
+  						<h5>Calidad</h5>
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  							consequat.
+  						</p>
+  					</div>
+  				</div>
+  				<div class="card-wrapper">
+  					<div class="head">
+  						<span class="material-icons">
+								paid
+							</span>
+  					</div>
+  					<div class="body">
+  						<h5>Precio</h5>
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  							consequat.
+  						</p>
+  					</div>
+  				</div>
+  				<div class="card-wrapper">
+  					<div class="head">
+  						<span class="material-icons">
+								stars
+							</span>
+  					</div>
+  					<div class="body">
+  						<h5>Raza</h5>
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  							consequat.
+  						</p>
+  					</div>
+  				</div>
+  			</article>
+  		</div>
+
+  		<div class="wrapper margen-interno" id="wrapper-two">
+  			<article>
+  				<div class="card-wrapper-two">
+  					<img src="../img/ganaderia01.jpg">
+  					<h5>Vaca</h5>
+  				</div>
+  				<div class="card-wrapper-two">
+  					<img src="../img/ganaderia02.jpg">
+  					<h5>Vaca</h5>
+  				</div>
+  				<div class="card-wrapper-two">
+  					<img src="../img/ganaderia03.jpg">
+  					<h5>Vaca</h5>
+  				</div>
+  				<div class="card-wrapper-two">
+  					<img src="../img/ganaderia04.jpg">
+  					<h5>Vaca</h5>
+  				</div>
+  			</article>
+  			<article>
+  				<h5>Disponible</h5>
+  				<h2>Los mejores ejemplares</h2>
+  				<p>
+  					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  					consequat.
+  				</p>
+  			</article>
+  		</div>
+
+  		<footer class="pag-footer margen-interno">
+          <div class="contain">
+            <div class="row">
+              <div class="">
+                <h5 class="">Feria de San Sebasti&aacute;n</h5>
+                <p class="">Agropecuaria,Industrial, Tur&iacute;stica, Folcl&oacute;rica.</p>
+              </div>
+              <div class="">
+                <h5 class="">Otros enlaces</h5>
+                <ul>
+                  <li><a class="" href="../index.html#mas-informacion">Mas informaci&oacute;n</a></li>
+                  <li><a class="" href="#!">Turismo</a></li>
+                </ul>1
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="contain">
+            
+            <a style="color: rgb(240 210 60);">Derechos reservados</a>
+            </div>
+          </div>
+        </footer>
+	</div>
+</body>
+</html>

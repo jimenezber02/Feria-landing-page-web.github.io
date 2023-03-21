@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css?v=87152">
+	<link rel="stylesheet" type="text/css" href="../css/gastronomia.css?v=61524">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var menu_btn = document.querySelector('.sidenav-trigger');
+			var menu = document.querySelector('.sidenav');
+			var p_footer = document.querySelector('footer .footer-copyright .contain');
+			
+			var _date = new Date();
+
+			var elems = document.querySelectorAll('.sidenav');
+    	M.Sidenav.init(elems);
+
+			//Para el boton de menú
+			menu_btn.addEventListener('click',()=>{
+				if(menu.style.display == 'block'){
+					menu.style.display = 'none';
+				}else{
+					menu.style.display = 'block';
+				}
+			});
+			//Para el copyright en el pie de pagina
+			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
+		}
+	</script>
+
+	<title>Gastronom&iacute;a - Oc&uacute;</title>
+</head>
+<body>
+	<div class="main">
+		<nav class="">
+		  <div class="nav-wrapper">
+      	<a href="#header" class="brand-logo">Oc&uacute;</a>
+	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+        	<li><a href="../index.html">Inicio</a></li>
+        	<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+        	<li><a href="historia.html">Historia</a></li>
+        	<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+		    	</ul>
+			</div>
+  		</nav>
+	  	<ul class="sidenav" id="mobile-demo">
+	    	<li><a href="#feria-san-sebastian">Inicio</a></li>
+      		<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+      		<li><a href="historia.html">Historia</a></li>
+      		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+  		</ul>
+  		<!-- End Region menu -->
+
+  		<!-- Región header -->
+  		<header>
+  			<article class="margen-interno">
+  				<h2>Gastronom&iacute;a</h2>
+  			</article>
+  		</header>
+  		<!-- End Region header -->
+
+  		<div class="wrapper margen-interno">
+  			<article>
+  				<h2>Nuestra gastronom&iacute;a</h2>
+  				<p>
+  					Degusta de una amplia variedad de platillos tradicionales visitando la feria de San Sebastian en Ocú.  ¡Ven y Sorprendete con los exquisitos platos elaborados con productos frescos de la región!
+  				</p>
+  			</article>
+  			<article>
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/comida.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua.
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Arroz con pollo</h5>
+  						</div>
+  						<div class="price-box">
+  							<span>2.50</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/comida02.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua.
+  						</p>
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Rabito de puerco</h5>
+  						</div>
+  						<div class="price-box">
+  							<span>2.00</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/comida.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua.
+  							consequat.
+  						</p>
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Tortillas</h5>
+  						</div>
+  						<div class="price-box">
+  							<span>3.50</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/comida.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  							tempor incididunt ut labore et dolore magna aliqua.
+  						</p>
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Carne en palito</h5>
+  						</div>
+  						<div class="price-box">
+  							<span>5.00</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>
+  					</div>
+  				</div>
+  			</article>
+  		</div>
+
+  		<footer class="pag-footer margen-interno">
+          <div class="contain">
+            <div class="row">
+              <div class="">
+                <h5 class="">Feria de San Sebasti&aacute;n</h5>
+                <p class="">Agropecuaria,Industrial, Tur&iacute;stica, Folcl&oacute;rica.</p>
+              </div>
+              <div class="">
+                <h5 class="">Otros enlaces</h5>
+                <ul>
+                  <li><a class="" href="#mas-informacion">Mas informaci&oacute;n</a></li>
+                  <li><a class="" href="#!">Turismo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="contain">
+            
+            <a style="color: rgb(240 210 60);">Derechos reservados</a>
+            </div>
+          </div>
+        </footer>
+	</div>
+</body>
+</html>

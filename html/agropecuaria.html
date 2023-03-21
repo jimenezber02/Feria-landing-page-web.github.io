@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css?v=87152">
+	<link rel="stylesheet" type="text/css" href="../css/agro.css?v=12">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+	<title>Actividades del agro</title>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var p_footer = document.querySelector('footer .footer-copyright .contain');
+			
+			var elems = document.querySelectorAll('.sidenav');
+    		M.Sidenav.init(elems);
+
+			var _date = new Date();
+
+			//Para el copyright en el pie de pagina
+			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
+
+			var $carousel = $('.carousel').flickity({
+				cellSelector: '.carousel-cell',
+			  imagesLoaded: true,
+			  freeScroll: true,
+			  percentPosition: false,
+			  autoPlay: 1500,
+			  wrapAround: true,
+			  pageDots: true,
+			  appendDots: $('.caption'),
+			});
+
+			var $imgs = $carousel.find('.carousel-cell img');
+			var $caption = $('.caption');
+	
+			// get transform property
+			var docStyle = document.documentElement.style;
+			var transformProp = typeof docStyle.transform == 'string' ?
+			  'transform' : 'WebkitTransform';
+			// get Flickity instance
+			var flkty = $carousel.data('flickity');
+
+			$carousel.on( 'scroll.flickity', function() {
+			  flkty.slides.forEach( function( slide, i ) {
+			    var img = $imgs[i];
+			    var x = ( slide.target + flkty.x ) * -1/3;
+			    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+			  })
+			}).on( 'select.flickity', function() {
+  			// set image caption using img's alt
+  			$caption.text( $('.carousel-cell.is-selected img').attr('alt') )
+			});
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<!-- Region menu -->
+		<nav class="">
+		    <div class="nav-wrapper">
+		      <a href="../index.html" class="brand-logo">Oc&uacute;</a>
+		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+		        	<li><a href="../index.html">Inicio</a></li>
+		        	<li id="actividades-li">
+		        		<a href="#actividades">Actividades</a>
+		        		<ul id="actividades-ul">
+		        			<li><a href="folclor.html">Folclor</a></li>
+		        			<li><a href="#">Agropecuaria</a></li>
+		        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
+		        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+		        			<li><a href="#">Entretenimiento</a></li>
+		        		</ul>
+		        	</li>
+		        	<li><a href="historia.html">Historia</a></li>
+		        	<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+		    	</ul>
+			</div>
+  		</nav>
+	  	<ul class="sidenav" id="mobile-demo">
+	    	<li><a href="#feria-san-sebastian">Inicio</a></li>
+      		<li id="actividades-li">
+        		<a id="activi" href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="#">Agropecuaria</a></li>
+        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
+        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+      		<li><a href="historia.html">Historia</a></li>
+      		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+  		</ul>
+  		<!-- End Region menu -->
+
+  		<!-- Región header -->
+  		<header>
+  			<article class="margen-interno">
+  				<h2>Actividades agropecuarias</h2>
+  			</article>
+  		</header>
+  		<!-- End Region header -->
+
+  		<!-- Región section 2 -->
+  		<div class="wrapper margen-interno">
+  			<div class="articles">
+  				<article>
+						<div class="carousel">
+						  <div class="carousel-cell">
+						    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro02.jpg" alt="One World Trade" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro.jpg" alt="drizzle" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro04.jpg" alt="cat nose" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro03.jpg" alt="contrail" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro.jpg" alt="golden hour" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/agro04.jpg" alt="flight formation" />
+						  </div>
+						</div>
+						<p class="caption">&nbsp;</p>
+  				</article>
+  			</div>
+  		</div>
+  		<!-- -->
+
+  		<!-- Section beneficios -->
+  		<div class="wrapper margen-interno" id="wrapper-two">
+  			<div class="articles">
+  				<article>
+  					<h2>El agro de Oc&uacute;</h2>
+  					<p>
+  						El impulso al sector agropecuario que recibió el distrito herrerano, lo convirtió en el mayor productor de yuca, ñame, otoe y zapallo del país.
+  					</p>
+  				</article>
+  				<div class="card-container">
+  					<div class="card">
+  						<div class="head">
+  							<img src="../img/agro02.jpg">
+  						</div>
+  						<div class="body">
+  							<h5>Calidad</h5>
+  							<p>
+  								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  								consequat.
+  							</p>
+  						</div>
+  					</div>
+  					<div class="card">
+  						<div class="head">
+  							<img src="../img/agro03.jpg">
+  						</div>
+  						<div class="body">
+  							<h5>Variedad</h5>
+  							<p>
+  								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  								consequat.
+  							</p>
+  						</div>
+  					</div>
+  					<div class="card">
+  						<div class="head">
+  							<img src="../img/agro04.jpg">
+  						</div>
+  						<div class="body">
+  							<h5>Sabor</h5>
+  							<p>
+  								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  								consequat.
+  							</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<footer class="pag-footer margen-interno">
+          <div class="contain">
+            <div class="row">
+              <div class="">
+                <h5 class="">Feria de San Sebasti&aacute;n</h5>
+                <p class="">Agropecuaria,Industrial, Tur&iacute;stica, Folcl&oacute;rica.</p>
+              </div>
+              <div class="">
+                <h5 class="">Otros enlaces</h5>
+                <ul>
+                  <li><a class="" href="#mas-informacion">Mas informaci&oacute;n</a></li>
+                  <li><a class="" href="#!">Turismo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="contain">
+            
+            <a style="color: rgb(240 210 60);">Derechos reservados</a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

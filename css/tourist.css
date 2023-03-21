@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+h2{
+	color: #00214d;
+}
+header,.gallery1,.gallery2,.gallery3{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100%;
+    flex-direction: row;
+}header article{
+	display: flex;
+	flex: 1 1 50%;
+	max-width: 50%;
+}
+header article:nth-child(1){
+	background-image: url(../img/san.jpg);
+    background-size: cover;
+    background-position: top;
+}header article:nth-child(2){
+	background-image: url(../img/cascade.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header article:nth-child(1) div{
+	background: rgb(0, 0, 0, .5);
+	width: 100%;
+}
+header article:nth-child(2) div{
+	width: 100%;
+	background: rgb(0, 0, 0, .4);
+	padding: 50px 0;
+	height: 500px;
+}
+header article h2{
+	color: #ffeb3b;
+}
+:is(.nav-wrapper ul,.sidenav) li #actividades-ul{
+	display: none;
+	position: absolute;
+	background: rgb(15 27 88);
+	padding: 0;
+	width: 150px;
+    margin-left: -20px;
+}:is(.nav-wrapper ul,.sidenav) li #actividades-ul li{
+	width: 100%;
+	padding: 2px 0;
+	margin: 0;
+}
+:is(.nav-wrapper ul,.sidenav) li#actividades-li:hover>#actividades-ul{
+	display: block;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../css/historia.css?v=413253">
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var p_footer = document.querySelector('footer .footer-copyright .contain');
+			var elems = document.querySelectorAll('.sidenav');
+				M.Sidenav.init(elems);
+			var _date = new Date();
+
+			//Para el copyright en el pie de pagina
+			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
+		}
+	</script>
+
+	<title>Historia de la feria de san sebasti&aacute;n</title>
+</head>
+<body>
+	<div class="main">
+		<!-- Region menu -->
+		<nav class="">
+		  <div class="nav-wrapper">
+		    <a href="#header" class="brand-logo">Oc&uacute;</a>
+	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+        	<li><a href="../index.html">Inicio</a></li>
+        	<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+        	<li><a href="#historia-feria-san-sebastian">Historia</a></li>
+        	<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+		    </ul>
+			</div>
+  		</nav>
+	  	<ul class="sidenav" id="mobile-demo">
+	    	<li><a href="#feria-san-sebastian">Inicio</a></li>
+      		<li id="actividades-li">
+        		<a href="#actividades">Actividades</a>
+        		<ul id="actividades-ul">
+        			<li><a href="folclor.html">Folclor</a></li>
+        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+        			<li><a href="#">Entretenimiento</a></li>
+        		</ul>
+        	</li>
+      		<li><a href="#historia-feria-san-sebastian">Historia</a></li>
+      		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+  		</ul>
+  		<!-- End Region menu -->
+
+  		<!-- Región header -->
+  		<header>
+  			<article class="margen-interno">
+  				<h2>Historia</h2>
+  			</article>
+  		</header>
+  		<!-- End Region header -->
+
+  		<div class="wrapper margen-interno" id="wrapper-one">
+  			<div class="articles">
+  				<article>
+  					<div class="info">
+  						<h5>Antecedentes</h5>
+  						<h2>C&oacute;mo nace la feria</h2>
+  						<p>
+  							La feria se inició en 1960, sin embargo, el proyecto nació dos décadas antes, en 1942, con la realización de una actividad similar, ubicada en los terrenos que ocupa hoy el hospital Sergio Núñez Núñez, las exposiciones se hacían en pequeños ranchos de paja o penca de palma real.
+  						</p>
+  					</div>
+  					<div class="imagen">
+  						<img src="../img/historia01.jpg">
+  					</div>
+  				</article>
+  			</div>
+  		</div>
+
+  		<div class="wrapper margen-interno" id="wrapper-two">
+  			<div class="articles">
+  				<article>
+  					<div class="imagen">
+  						<img src="../img/historia02.jpg">
+  					</div>
+  					<div class="info">
+  						<h5>Inicio</h5>
+  						<h2>C&oacute;mo inicia la feria</h2>
+  						<p>
+  							A inicios de la década de los años 60, un comité inicia la organización de la feria, con la intención de dar a conocer el potencial ganadero, agrícola y folclórico de Ocú.
+  							Los fundadores del evento fueron los doctores José María Núñez, Herminio Carrizo, Rodrigo Núñez y Aristóbulo Carrizo, este último presidió el comité que organizó la feria en 1960.
+  						</p>
+  					</div>
+  				</article>
+  			</div>
+  		</div>
+  		<div class="wrapper margen-interno" id="wrapper-three">
+  			<div class="articles">
+  				<article>
+  					<div class="info">
+  						<h5>En sus inicios y ahora</h5>
+  						<h2>Organizaci&oacute;n</h2>
+  						<p>
+  							La Feria, la integraba un comité, elegido por el pueblo, por las fuerzas vivas de la comunidad, después de varios años, estos comités fueron conformados por patronatos, que a su vez son representativos de organizaciones populares, algunos de éstos son los ganaderos, folcloristas, artesanos, comerciantes, empresarios, educadores, bajo la asesoría de la Comisión de Ferias del Ministerio de Desarrollo Agropecuario.
+  						</p>
+  					</div>
+  					<div class="imagen">
+  						<img src="../img/historia03.jpg">
+  					</div>
+  				</article>
+  			</div>
+  		</div>
+
+  		<footer class="pag-footer margen-interno">
+          <div class="contain">
+            <div class="row">
+              <div class="">
+                <h5 class="">Feria de San Sebasti&aacute;n</h5>
+                <p class="">Agropecuaria,Industrial, Tur&iacute;stica, Folcl&oacute;rica.</p>
+              </div>
+              <div class="">
+                <h5 class="">Otros enlaces</h5>
+                <ul>
+                  <li><a class="" href="#mas-informacion">Mas informaci&oacute;n</a></li>
+                  <li><a class="" href="#!">Turismo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="contain">
+            
+            <a style="color: rgb(240 210 60);">Derechos reservados</a>
+            </div>
+          </div>
+        </footer>
+	</div>
+</body>
+</html>
