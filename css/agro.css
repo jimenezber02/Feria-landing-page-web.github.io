@@ -130,13 +130,21 @@ h2{
 	}
 
 	.card-container .card{
-		flex: 1 1 100%;
-		max-width: 100%;
+		flex: 1 1 95%;
+		max-width: 95%;
 	}
 
 	.card-container .card:hover{
 		transform: none;
 	}
+	
+	#wrapper-one{
+		padding: 50px 10px 0 10px;
+	}
+
+	#wrapper-two article{
+		text-align: center;
+	} 
 }
 
 @media all and (max-width: 480px){
@@ -157,4 +165,5 @@ h2{
 	.carousel{
   		height: 250px;
 	}
+
 }

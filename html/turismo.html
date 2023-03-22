@@ -7,13 +7,60 @@
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="../css/tourist.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/flickity-as-nav-for@3/as-nav-for.js"></script>
+
 	<!-- Compiled and minified JavaScript -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	
 	<title>Atracciones - tu&iacute;sticas</title>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var p_footer = document.querySelector('footer .footer-copyright .contain');
+			
+			var elems = document.querySelectorAll('.sidenav');
+    	M.Sidenav.init(elems);
+
+			var _date = new Date();
+
+			//Para el copyright en el pie de pagina
+			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
+			
+			// asNavFor can be set a selector string
+			asNavFor: '.carousel-main'
+			var $caption = $('.caption');
+			$('.carousel-main').flickity({
+				asNavFor: '.carousel-nav',
+				cellSelector: '.carousel-cell',
+				imagesLoaded: true,
+				contain: true,
+				pageDots: true,
+				freeScroll: true,
+				autoPlay: 1500,
+			  wrapAround: true,
+			});
+
+			// 2nd carousel, navigation
+			$('.carousel-nav').flickity({
+			  asNavFor: '.carousel-main',
+			  cellSelector: '.carousel-cell',
+			  contain: true,
+			  appendDots: $('.caption'),
+			}).on( 'select.flickity', function() {
+  			// set image caption using img's alt
+  			$caption.text( $('.carousel-cell.is-selected img').attr('alt') )
+			});;
+
+
+		});
+	</script>
 </head>
 <body>
 	<div class="main">
@@ -30,12 +77,14 @@
 		        		<ul id="actividades-ul">
 		        			<li><a href="folclor.html">Folclor</a></li>
 		        			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+		        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
 		        			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
 		        			<li><a href="#">Entretenimiento</a></li>
+		        			<li><a href="artesania.html">Artesan&iacute;a</a></li>
 		        		</ul>
 	        		</li>
 	        		<li><a href="historia.html">Historia</a></li>
-	        		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+	        		<li><a href="../index.html#mas-informacion">Mas informaci&oacute;n</a></li>
 			    </ul>
 			</div>
   		</nav>
@@ -46,12 +95,14 @@
         		<ul id="actividades-ul">
         			<li><a href="folclor.html">Folclor</a></li>
         			<li><a href="agropecuaria.html">Agropecuaria</a></li>
+        			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
         			<li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
         			<li><a href="#">Entretenimiento</a></li>
+        			<li><a href="artesania.html">Artesan&iacute;a</a></li>
         		</ul>
         	</li>
       		<li><a href="historia.html">Historia</a></li>
-      		<li><a href="#mas-informacion">Mas informaci&oacute;n</a></li>
+      		<li><a href="../index.html#mas-informacion">Mas informaci&oacute;n</a></li>
   		</ul>
   		<!-- End Region menu -->
 
@@ -68,6 +119,66 @@
   		</header>
   		<!-- End Region header -->
 
+  		<section class="wrapper margen-interno">
+  			<article>
+  				<h2>Nuestras atracciones tur&iacute;sticas</h2>
+  				<p>
+  					Son muchos los atractivos tur&iacute;sticos por visitar y tal vez no los pueda recorrer durante el d&iacute;a, en el &aacute;rea perimetral del poblado, está la iglesia San Sebastián, el nuevo parque central,  a un lado se yergue el famoso Tamarindo que en cierta ocasión sembró Don Aníbal Quintero Villarreal, para recordar las famosas fiestas que se hacían debajo de estos árboles para celebrar la festividad del patrón San Sebastián y la co-patrona Santa Rosa, otros atractivos están La Posada, residencias hechas con piedra en láminas, el Cerro Tijera, los ríos Señales y El Chorro, el lago de la feria, la reserva del Cerro Camarón y el Majara. 
+  				</p>
+  			</article>
+  			<article>
+  				<!-- Flickity HTML init -->
+					<div class="carousel carousel-main" data-flickity>
+					  <div class="carousel-cell">
+						  <img src="../img/river01.jpg" alt="Hermosos r&iacute;s" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/cascade.jpg" alt="Cascadas" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/casa01.jpg" alt="Antigüedades" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/river02.jpg" alt="M&aacute;s r&iacute;os" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/parque01.jpg" alt="Parque central" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/nature01.jpg" alt="Naturaleza" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/mirador_ocu.jpg" alt="Mirador de Oc&uacute;" />
+						  </div>
+					</div>
+
+					<div class="carousel carousel-nav"
+					  >
+					  <div class="carousel-cell">
+						  <img src="../img/river01.jpg" alt="Hermosos r&iacute;os" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/cascade.jpg" alt="Cascadas" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/casa01.jpg" alt="Antigüedades" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/river02.jpg" alt="M&aacute;s r&iacute;os" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/parque01.jpg" alt="Parque central" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/nature01.jpg" alt="Naturaleza" />
+						  </div>
+						  <div class="carousel-cell">
+						    <img src="../img/mirador_ocu.jpg" alt="Mirador de Oc&uacute;" />
+						  </div>
+					</div>
+					<p class="caption">&nbsp;</p>
+  			</article>
+  		</section>
 
   		<footer class="pag-footer margen-interno">
           <div class="contain">

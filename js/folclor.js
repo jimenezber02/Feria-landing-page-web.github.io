@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('.center').slick({
 		centerMode: true,
 		centerPadding: '60px',
-		slidesToShow: 2,
+		slidesToShow: 3,
 		autoplay: true,
 	    dots: true,
 	      infinite: true,

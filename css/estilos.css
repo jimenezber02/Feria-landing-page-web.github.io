@@ -233,6 +233,9 @@ nav{
 	}
 
 /*Section - como mas-informacion */
+#mas-informacion .articles article:nth-child(1){
+	justify-content: end;
+}
 #mas-informacion .articles article:nth-child(1) img{
     box-shadow: -30px -22px 1px -1px rgb(240,210,60);
     -webkit-box-shadow: -30px -22px 1px -1px rgb(240,210,60);
@@ -283,6 +286,10 @@ nav{
 	}
 
 	/*Section 1 - header */
+	#feria-san-sebastian article .content{
+		padding: 30px 20px;
+	}
+
 	#feria-san-sebastian .articles{
 		flex-direction: column;
 	}

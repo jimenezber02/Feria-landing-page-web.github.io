@@ -85,35 +85,27 @@ header{
 	align-items: center;
 	width: 90%; /* Ancho del slider */
   	margin: 0 auto; /* Centrar el slider */
-  	height: 500px;
+  	height: 300px;
 }
 .gallery2 .imgs-content div{
 	margin: 0 5px;
 	height: 100%;
 }
 .gallery2 .imgs-content .card{
-	/*flex: 1 1 30%;
-	max-width: 30%;*/
 	display: flex;
 	margin: 0 15px;
 	height: 100%;
 	flex-direction: column;
-	background: rgb(0, 0, 0,.7);
+
 }
-/*.gallery2 .imgs-content .card:nth-child(1){
-	height: 250px;
-	opacity: 0.5;
-	padding: 0 45px;
-}.gallery2 .imgs-content .card:nth-child(3){
-	height: 250px;
-	opacity: 0.5;
-	padding: 0 45px;
-}*/
+
 .gallery2 .imgs-content div img{
 	width: 100%;
 	height: 100%;
 }
-
+.gallery3{
+	background: #f2f4f6 !important;
+}
 .gallery3 .head{
 	width: 100%;
 	display: flex;
