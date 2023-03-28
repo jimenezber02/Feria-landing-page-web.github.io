@@ -106,6 +106,10 @@ header{
 .gallery3{
 	background: #f2f4f6 !important;
 }
+
+.gallery3 p{
+	text-align: justify;
+}
 .gallery3 .head{
 	width: 100%;
 	display: flex;

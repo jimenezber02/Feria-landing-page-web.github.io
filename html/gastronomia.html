@@ -22,14 +22,6 @@
 			var elems = document.querySelectorAll('.sidenav');
     	M.Sidenav.init(elems);
 
-			//Para el boton de menú
-			menu_btn.addEventListener('click',()=>{
-				if(menu.style.display == 'block'){
-					menu.style.display = 'none';
-				}else{
-					menu.style.display = 'block';
-				}
-			});
 			//Para el copyright en el pie de pagina
 			p_footer.prepend(`© ${_date.getFullYear()} Copyright `);
 		}
@@ -51,7 +43,7 @@
         			<li><a href="folclor.html">Folclor</a></li>
         			<li><a href="agropecuaria.html">Agropecuaria</a></li>
         			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
-        			<li><a href="#">Entretenimiento</a></li>
+        			<!--<li><a href="#">Entretenimiento</a></li>-->
         			<li><a href="artesania.html">Artesan&iacute;a</a></li>
         		</ul>
         	</li>
@@ -61,14 +53,14 @@
 			</div>
   		</nav>
 	  	<ul class="sidenav" id="mobile-demo">
-	    	<li><a href="#feria-san-sebastian">Inicio</a></li>
+	    	<li><a href="../index.html">Inicio</a></li>
       		<li id="actividades-li">
         		<a href="#actividades">Actividades</a>
         		<ul id="actividades-ul">
         			<li><a href="folclor.html">Folclor</a></li>
         			<li><a href="agropecuaria.html">Agropecuaria</a></li>
         			<li><a href="ganaderia.html">Ganader&iacute;a</a></li>
-        			<li><a href="#">Entretenimiento</a></li>
+        			<!--<li><a href="#">Entretenimiento</a></li>-->
         			<li><a href="artesania.html">Artesan&iacute;a</a></li>
         		</ul>
         	</li>
@@ -93,73 +85,23 @@
   				</p>
   				<img src="../img/gastronomia.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center; margin-bottom: 30px;">
   			</article>
+
   			<div class="card-food">
   				<div class="card">
   					<div class="head-card">
-  						<img src="../img/comida.jpg">
+  						<img src="../img/yuca_frita.jpg">
   					</div>
   					<div class="body-card">
   						<p>
-  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  							tempor incididunt ut labore et dolore magna aliqua.
-  					</div>
-  					<div class="footer-card">
-  						<div class="h5-box">
-  							<h5>Arroz con pollo</h5>
-  						</div>
-  						<div class="price-box">
-  							<span>2.50</span>
-  						</div>
-  						<div class="icon-box">
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="card">
-  					<div class="head-card">
-  						<img src="../img/comida02.jpg">
-  					</div>
-  					<div class="body-card">
-  						<p>
-  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  							tempor incididunt ut labore et dolore magna aliqua.
+  							Este tipo de desayuno suele ser abundante y nutritivo, ya que se prepara con ingredientes frescos y locales, y a menudo se consume temprano en la mañana para tener energía para el trabajo en el campo.
+  							El desayuno del campo es una opción nutritiva y sabrosa que puede proporcionar una fuente de proteínas, fibra, vitaminas y minerales.
   						</p>
   					</div>
   					<div class="footer-card">
   						<div class="h5-box">
-  							<h5>Rabito de puerco</h5>
+  							<h5>Desayuno-Yuca frita, bistec...</h5>
   						</div>
-  						<div class="price-box">
-  							<span>2.00</span>
-  						</div>
-  						<div class="icon-box">
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  							<i class="material-icons">star</i>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="card">
-  					<div class="head-card">
-  						<img src="../img/comida.jpg">
-  					</div>
-  					<div class="body-card">
-  						<p>
-  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  							tempor incididunt ut labore et dolore magna aliqua.
-  							consequat.
-  						</p>
-  					</div>
-  					<div class="footer-card">
-  						<div class="h5-box">
-  							<h5>Tortillas</h5>
-  						</div>
+  						<!--
   						<div class="price-box">
   							<span>3.50</span>
   						</div>
@@ -169,24 +111,82 @@
   							<i class="material-icons">star</i>
   							<i class="material-icons">star</i>
   							<i class="material-icons">star</i>
-  						</div>
+  						</div>-->
   					</div>
   				</div>
   				<div class="card">
   					<div class="head-card">
-  						<img src="../img/comida.jpg">
+  						<img src="../img/arroz_pollo.jpg">
   					</div>
   					<div class="body-card">
   						<p>
-  							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  							tempor incididunt ut labore et dolore magna aliqua.
+  							El arroz con pollo es un plato nutritivo y delicioso que puede ser parte de una dieta saludable y equilibrada.<br>
+  							El arroz y el pollo son ricos en vitaminas y minerales esenciales, como hierro, zinc, fósforo, niacina y vitamina B6.
+  							<br>
+  							¡Disfruta de un delicioso arroz con pollo en las fondas de nuestra feria de San Sebasti&aacute;n!
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Arroz con pollo</h5>
+  						</div>
+  						<!--
+  						<div class="price-box">
+  							<span>2.50</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>-->
+  					</div>
+  				</div>
+
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/sancocho.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							El sancocho de gallina es un plato tradicional que se prepara con gallina, ñame, culantros, or&eacute;ganos. Considerado un símbolo de la identidad nacional.
+  							<br>
+  							El sancocho de gallina es nutritivo, fácil de preparar, versátil y muy apreciado en la cultura panameña.
   						</p>
   					</div>
   					<div class="footer-card">
   						<div class="h5-box">
-  							<h5>Carne en palito</h5>
+  							<h5>Sancocho de gallina</h5>
   						</div>
-  						<div class="price-box">
+  						<!--<div class="price-box">
+  							<span>2.00</span>
+  						</div>
+  						<div class="icon-box">
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  							<i class="material-icons">star</i>
+  						</div>-->
+  					</div>
+  				</div>
+
+  				<div class="card">
+  					<div class="head-card">
+  						<img src="../img/dulces.jpg">
+  					</div>
+  					<div class="body-card">
+  						<p>
+  							Los dulces en Oc&uacute; son parte importante de la gastronomía del &aacute;rea y se elaboran con una gran variedad de ingredientes locales como la miel de caña, leche, la panela y frutas tropicales.
+  							<br>
+  							Es parte de la gastronomía de la región con beneficios económicos para la comunidad. 
+  						</p>
+  					</div>
+  					<div class="footer-card">
+  						<div class="h5-box">
+  							<h5>Dulces</h5>
+  						</div>
+  						<!--<div class="price-box">
   							<span>5.00</span>
   						</div>
   						<div class="icon-box">
@@ -195,7 +195,7 @@
   							<i class="material-icons">star</i>
   							<i class="material-icons">star</i>
   							<i class="material-icons">star</i>
-  						</div>
+  						</div>-->
   					</div>
   				</div>
   			</div>

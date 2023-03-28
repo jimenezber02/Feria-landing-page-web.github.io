@@ -133,6 +133,7 @@ nav{
 	}
 	#feria-san-sebastian p{
 		color: #e7e7ef;
+		text-align: justify;
 	}
 
 /* Section actividades */
@@ -204,8 +205,9 @@ nav{
 		padding-bottom: 20px;
 	}
 		#historia-feria-san-sebastian p{
-			padding-right: 5px;
+			padding-right: 10px;
 			margin-bottom: 20px;
+			text-align: justify;
 		}
 		/* para aplicar la misma configuracion en dos secciones */
 		:is(#historia-feria-san-sebastian,#mas-informacion) .articles article{
@@ -233,13 +235,10 @@ nav{
 	}
 
 /*Section - como mas-informacion */
-#mas-informacion .articles article:nth-child(1){
-	justify-content: end;
-}
-#mas-informacion .articles article:nth-child(1) img{
-    box-shadow: -30px -22px 1px -1px rgb(240,210,60);
-    -webkit-box-shadow: -30px -22px 1px -1px rgb(240,210,60);
-    -moz-box-shadow: -30px -22px 1px -1px rgba(214,109,23,0.96);
+#mas-informacion .articles article:nth-child(1) p{
+	padding: 5px;
+	border-left: 5px solid rgb(240,210,60);
+	text-align: justify;
 }
 #mas-informacion .articles article:nth-child(2)
 {
@@ -287,7 +286,7 @@ nav{
 
 	/*Section 1 - header */
 	#feria-san-sebastian article .content{
-		padding: 30px 20px;
+		padding: 30px 10px;
 	}
 
 	#feria-san-sebastian .articles{
@@ -301,14 +300,20 @@ nav{
 			display: none;
 		}
 	/*Section2 -actividades */
+	#actividades h2{
+		text-align: justify;
+	}
+	#actividades article p{
+		text-align: justify;
+	}
 	#actividades article:nth-child(2){
 		flex-direction: column;
 	}
 	#actividades article .card-actividad{
-		flex: 1 1 90%;
-		max-width: 90%;
+		flex: 1 1 100%;
+		max-width: 100%;
 		margin-bottom: 20px;
-		min-width: 90%;
+		min-width: 100%;
 	}#actividades article .card-actividad:hover{
 		transform: none;
 	}
@@ -340,6 +345,10 @@ nav{
 		padding-left: initial;
 	}#mas-informacion .articles article #mapa img{
 		border: none;
+	}
+
+	#mas-informacion p{
+		text-align: justify;
 	}
 
 	/*Footer - pie de página */
