@@ -9,9 +9,9 @@ header,.gallery1,.gallery2,.gallery3{
 }
 header{
 	width: 100%;
-	background-image: url(../img/san.jpg);
+	background-image: url(../img/city.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }header article{
 	width: 100%;
 	background: rgb(0, 0, 0, .5);

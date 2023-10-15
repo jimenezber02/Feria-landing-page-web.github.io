@@ -9,9 +9,9 @@ header,.gallery1,.gallery2,.gallery3{
 }/* Región header */
 header{
 	width: 100%;
-	background-image: url('../img/san.jpg');
+	background-image: url('../img/city.jpg');
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 }header article{
 	width: 100%;
 	background: rgb(0, 0, 0, .7);
